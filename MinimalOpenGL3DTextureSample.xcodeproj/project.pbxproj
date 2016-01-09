@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		505D42421C4169A300ADB760 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505D42411C4169A300ADB760 /* main.cpp */; };
-		505D42491C4169E700ADB760 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */; };
-		505D424B1C416B3500ADB760 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D424A1C416B3500ADB760 /* OpenGL.framework */; };
+		50A5C4BE1C4181A300772F98 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A5C4BD1C4181A300772F98 /* main.cpp */; };
+		50A5C4C21C41820F00772F98 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D424A1C416B3500ADB760 /* OpenGL.framework */; };
+		50A5C4C31C41822300772F98 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		505D423C1C4169A300ADB760 /* CopyFiles */ = {
+		50A5C4B91C4181A300772F98 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,19 +25,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		505D423E1C4169A300ADB760 /* OpenGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		505D42411C4169A300ADB760 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
 		505D424A1C416B3500ADB760 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		50A5C4B51C41814F00772F98 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = MinimalOpenGL3DTextureSample/main.cpp; sourceTree = SOURCE_ROOT; };
+		50A5C4BB1C4181A300772F98 /* MinimalOpenGL3DTextureSample */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MinimalOpenGL3DTextureSample; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A5C4BD1C4181A300772F98 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		505D423B1C4169A300ADB760 /* Frameworks */ = {
+		50A5C4B81C4181A300772F98 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505D424B1C416B3500ADB760 /* OpenGL.framework in Frameworks */,
-				505D42491C4169E700ADB760 /* libglfw3.3.1.dylib in Frameworks */,
+				50A5C4C31C41822300772F98 /* libglfw3.3.1.dylib in Frameworks */,
+				50A5C4C21C41820F00772F98 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +50,8 @@
 			children = (
 				505D424A1C416B3500ADB760 /* OpenGL.framework */,
 				505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */,
-				505D42401C4169A300ADB760 /* OpenGLTest */,
+				505D42401C4169A300ADB760 /* MinimalOpenGL3DTextureSample */,
+				50A5C4BC1C4181A300772F98 /* MinimalOpenGL3DTextureSample */,
 				505D423F1C4169A300ADB760 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,37 +59,46 @@
 		505D423F1C4169A300ADB760 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				505D423E1C4169A300ADB760 /* OpenGLTest */,
+				50A5C4BB1C4181A300772F98 /* MinimalOpenGL3DTextureSample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		505D42401C4169A300ADB760 /* OpenGLTest */ = {
+		505D42401C4169A300ADB760 /* MinimalOpenGL3DTextureSample */ = {
 			isa = PBXGroup;
 			children = (
-				505D42411C4169A300ADB760 /* main.cpp */,
+				50A5C4B51C41814F00772F98 /* main.cpp */,
 			);
+			name = MinimalOpenGL3DTextureSample;
 			path = OpenGLTest;
+			sourceTree = "<group>";
+		};
+		50A5C4BC1C4181A300772F98 /* MinimalOpenGL3DTextureSample */ = {
+			isa = PBXGroup;
+			children = (
+				50A5C4BD1C4181A300772F98 /* main.cpp */,
+			);
+			path = MinimalOpenGL3DTextureSample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		505D423D1C4169A300ADB760 /* OpenGLTest */ = {
+		50A5C4BA1C4181A300772F98 /* MinimalOpenGL3DTextureSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 505D42451C4169A300ADB760 /* Build configuration list for PBXNativeTarget "OpenGLTest" */;
+			buildConfigurationList = 50A5C4BF1C4181A300772F98 /* Build configuration list for PBXNativeTarget "MinimalOpenGL3DTextureSample" */;
 			buildPhases = (
-				505D423A1C4169A300ADB760 /* Sources */,
-				505D423B1C4169A300ADB760 /* Frameworks */,
-				505D423C1C4169A300ADB760 /* CopyFiles */,
+				50A5C4B71C4181A300772F98 /* Sources */,
+				50A5C4B81C4181A300772F98 /* Frameworks */,
+				50A5C4B91C4181A300772F98 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = OpenGLTest;
-			productName = OpenGLTest;
-			productReference = 505D423E1C4169A300ADB760 /* OpenGLTest */;
+			name = MinimalOpenGL3DTextureSample;
+			productName = MinimalOpenGL3DTextureSample;
+			productReference = 50A5C4BB1C4181A300772F98 /* MinimalOpenGL3DTextureSample */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -99,12 +110,12 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Pascal Spörri";
 				TargetAttributes = {
-					505D423D1C4169A300ADB760 = {
+					50A5C4BA1C4181A300772F98 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = 505D42391C4169A300ADB760 /* Build configuration list for PBXProject "OpenGLTest" */;
+			buildConfigurationList = 505D42391C4169A300ADB760 /* Build configuration list for PBXProject "MinimalOpenGL3DTextureSample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -116,17 +127,17 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				505D423D1C4169A300ADB760 /* OpenGLTest */,
+				50A5C4BA1C4181A300772F98 /* MinimalOpenGL3DTextureSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		505D423A1C4169A300ADB760 /* Sources */ = {
+		50A5C4B71C4181A300772F98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				505D42421C4169A300ADB760 /* main.cpp in Sources */,
+				50A5C4BE1C4181A300772F98 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +225,7 @@
 			};
 			name = Release;
 		};
-		505D42461C4169A300ADB760 /* Debug */ = {
+		50A5C4C01C4181A300772F98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
@@ -225,7 +236,7 @@
 			};
 			name = Debug;
 		};
-		505D42471C4169A300ADB760 /* Release */ = {
+		50A5C4C11C4181A300772F98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LIBRARY_SEARCH_PATHS = (
@@ -239,7 +250,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		505D42391C4169A300ADB760 /* Build configuration list for PBXProject "OpenGLTest" */ = {
+		505D42391C4169A300ADB760 /* Build configuration list for PBXProject "MinimalOpenGL3DTextureSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				505D42431C4169A300ADB760 /* Debug */,
@@ -248,11 +259,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		505D42451C4169A300ADB760 /* Build configuration list for PBXNativeTarget "OpenGLTest" */ = {
+		50A5C4BF1C4181A300772F98 /* Build configuration list for PBXNativeTarget "MinimalOpenGL3DTextureSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				505D42461C4169A300ADB760 /* Debug */,
-				505D42471C4169A300ADB760 /* Release */,
+				50A5C4C01C4181A300772F98 /* Debug */,
+				50A5C4C11C4181A300772F98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
