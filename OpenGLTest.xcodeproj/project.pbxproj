@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		505D42421C4169A300ADB760 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 505D42411C4169A300ADB760 /* main.cpp */; };
+		505D42491C4169E700ADB760 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */; };
+		505D424B1C416B3500ADB760 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 505D424A1C416B3500ADB760 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		505D423E1C4169A300ADB760 /* OpenGLTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505D42411C4169A300ADB760 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw3.3.1.dylib; path = ../../../../usr/local/Cellar/glfw3/3.1.2/lib/libglfw3.3.1.dylib; sourceTree = "<group>"; };
+		505D424A1C416B3500ADB760 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				505D424B1C416B3500ADB760 /* OpenGL.framework in Frameworks */,
+				505D42491C4169E700ADB760 /* libglfw3.3.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +47,8 @@
 		505D42351C4169A300ADB760 = {
 			isa = PBXGroup;
 			children = (
+				505D424A1C416B3500ADB760 /* OpenGL.framework */,
+				505D42481C4169E700ADB760 /* libglfw3.3.1.dylib */,
 				505D42401C4169A300ADB760 /* OpenGLTest */,
 				505D423F1C4169A300ADB760 /* Products */,
 			);
@@ -161,6 +169,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -198,6 +207,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -207,6 +217,10 @@
 		505D42461C4169A300ADB760 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +228,10 @@
 		505D42471C4169A300ADB760 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
